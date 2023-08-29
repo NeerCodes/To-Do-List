@@ -1,0 +1,63 @@
+<%- include("header") -%>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body> -->
+
+    <div class="box" id="heading">
+        <h1> <%= listTitle %> </h1>
+    </div>
+    
+    <!-- <script src="app.js"></script> -->
+
+    <div class="box">
+        <% for(let i = 0; i < newListItems.length; i++){ %>
+            <div class="item">
+               <input type="checkbox">
+               <p>
+                   <%= newListItems[i] %>
+               </p>
+            </div>
+        <% } %>
+
+        <form class="item" action="/" method="post">
+            <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
+            <button type="submit" name="list" value=<%= listTitle %>>+</button>
+        </form>
+    
+    </div>
+    
+    <!-- <ul>
+        <!-- <li>Buy Food</li>
+        <li>Cook Food</li>
+        <li>Eat Food</li> -->   
+        <!-- We have directly added above items to new array while defining -->
+        <!-- <li><%= newListItems %></li> -->
+
+        <!-- <% for(let i = 0; i < newListItems.length; i++){ %>
+            <li><%= newListItems[i] %></li>
+        <% } %>
+    </ul> --> -->
+
+    <!-- <form action="/" method="post">
+
+        <input type="text" name="newItem">
+        <button type="submit" name="button">ADD</button> -->
+
+    <!-- </form> -->
+
+    <!-- <footer>
+        Copyright 2023 The Neer Tech
+    </footer>
+</body>
+</html> -->
+
+<%- include("footer") -%>
+
